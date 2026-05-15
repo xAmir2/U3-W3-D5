@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="py-2 text-secondary small bg-dark">
       <p>
-        <span className="text-white">Italia</span> | English &#40;UK&#41;
+        <span className="text-white">Italy</span> | English &#40;UK&#41;
       </p>
 
       <p>
