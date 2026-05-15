@@ -8,8 +8,8 @@ const Footer = () => {
       </p>
 
       <p>
-        Copyright © 2024 <span className="text-white">Apple Inc.</span> Tutti i
-        diritti riservati.
+        Copyright © 2024 <span className="text-white">Apple Inc.</span> All
+        rights reserved.
       </p>
       <Row className="w-75 text-white align-items-center">
         <Col xs="auto" style={{ cursor: "pointer" }}>
