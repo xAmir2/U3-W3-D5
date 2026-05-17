@@ -3,12 +3,13 @@ import { Heart, HeartFill } from "react-bootstrap-icons";
 import { useDispatch, useSelector } from "react-redux";
 
 import { addToFavorites, removeFromFavorites } from "../Redux/actions";
+
 import { Col, Row } from "react-bootstrap";
 
 export const RadioSection = () => {
   const dispatch = useDispatch();
 
-  const favorites = useSelector((state) => state.favorites.favorites);
+  const favorites = useSelector((state) => state.favorites);
 
   const pics = [
     "./src/assets/images/2a.png",

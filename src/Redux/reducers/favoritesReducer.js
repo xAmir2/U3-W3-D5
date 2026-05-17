@@ -7,18 +7,10 @@ const initialState = {
 const favoritesReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TO_FAVORITES:
-      return {
-        ...state,
-
-        favorites: [...state.favorites, action.payload],
-      };
+      return [...state, action.payload];
 
     case REMOVE_FROM_FAVORITES:
-      return {
-        ...state,
-
-        favorites: state.favorites.filter((song) => song.id !== action.payload),
-      };
+      return state.filter((song) => song.id !== action.payload);
 
     default:
       return state;

@@ -7,10 +7,9 @@ import { addToFavorites, removeFromFavorites } from "../Redux/actions";
 const MusicCard = ({ song }) => {
   const dispatch = useDispatch();
 
-  const favorites = useSelector((state) => state.favorites.favorites);
-
-  const isFavorite = favorites.find((fav) => fav.id === song.id);
-
+  const favorites = useSelector((state) => state.favorites);
+  
+  const isFavorite = favorites.some((song) => song.id === song.id);
   const toggleFavorite = (e) => {
     e.stopPropagation();
 

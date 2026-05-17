@@ -26,7 +26,10 @@ const NavBar = () => {
           ></i>
         </div>
         <div className="d-md-none">
-          <i class="bi bi-list text-danger" style={{ cursor: "pointer" }}></i>
+          <i
+            className="bi bi-list text-danger"
+            style={{ cursor: "pointer" }}
+          ></i>
         </div>
         <Navbar.Brand className="d-none d-md-flex justify-content-center w-100 ">
           <div className="rounded-2 py-1 px-3 bg-secondary d-flex align-items-center w-50 justify-content-center">
